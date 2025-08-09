@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Devanagari:wght@100;200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Hebrew:wght@100;200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root {
+
+    --fontInter: Inter;
+    --fontOpenSans: Opens Sans;
+    --fontIbm: IBM Plex Sans Hebrew;
+    --noir: #000E01;
+    --blanc: #FFFFFF;
+    --vert: #618264;
+    --marron: #443434;
+    --defaultsize: 10px
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: var(--defaultsize);
+}
+
+body {
+    width: 100vw;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 4rem;
+    font-family: var(--fontInter);
+
+}
+
+.liste {
+    display: flex;
+    font-size: 1.5rem;
+    color: var(--noir);
+    gap: 3rem;
+    list-style-type: none;
+}
+
+li:hover {
+    color: var(--vert);
+    text-decoration: underline;
+}
+
+.bouton {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 1rem 3rem;
+    background-color: var(--vert);
+    border-radius: 5rem;
+    color: var(--blanc);
+}
+
+.section1{
+    display: flex;
+    gap: 2rem;
+    height: 40rem;
+    padding: 2rem 4rem;
+}
+.nganou{
+    flex: 4;
+    border-radius: 2rem;
+    background-image: url("../img/nganou.svg");
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: cover;
+    color: var(--blanc);
+    font-family: var(--fontIbm);
+    display: flex;
+    align-items: flex-end;
+    padding:0 0 3.5rem 3rem;
+}
+
+.text{
+    
+    border-left: solid 1.2rem;
+    width: 80%;
+    height:inherit;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 1rem;
+    gap: 0.5rem;
+    border-left-color: var(--vert);
+}
+
+.title{
+    font-size: 2rem;
+    font-weight: bold;
+}
+.description{
+    font-size: 1rem;
+    font-weight:400;
+}
+
+.aside{
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+}
+.la_une{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    height: 8%;
+}
+.bordure{
+    background-color: var(--vert);
+    height: 100%;
+    width: 1rem;
+    border-radius: 2rem;
+}
+.text2{
+    font-family: var(--fontIbm);
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: var(--noir);
+}
+.aside_item2{
+    height: 80%;
+}
+.ecole{
+    margin-top: 1.5rem;
+    display:flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+.ecole_image{
+    width: 105%;
+}
+.ecole_text{
+    display:flex;
+    width: 70%;
+    flex-direction: column;
+    gap: 1.5rem;
+    color: var(--marron);
+}
+.ecole_title{
+    font-family: var(--fontIbm);
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.ecole_description{
+    font-family: var(--fontOpenSans);
+    font-size: 1rem;
+    font-weight: regular;
+}
