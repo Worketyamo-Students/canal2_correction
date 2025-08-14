@@ -60,6 +60,13 @@ li:hover {
   border-radius: 5rem;
   color: var(--blanc);
 }
+.bouton:hover{
+  background-color:white;
+  color: #618264;
+  transition: 1s;
+  cursor: pointer;
+  border: 2px #618264 solid;
+}
 
 .section1 {
   display: flex;
@@ -334,7 +341,6 @@ footer .footer_div2{
 }
 
 /* responsive mobile */
-
 @media screen and (max-width:640px) {
   header nav{
     display: none;
@@ -358,7 +364,8 @@ footer .footer_div2{
   align-items: center;
   padding: 6rem 0rem;
   gap: 3rem;
-} .section4 .section4_subsection{
+} 
+.section4 .section4_subsection{
   display: flex;
   flex-direction: column;
   align-items: center;
