@@ -289,3 +289,24 @@ li:hover {
   height: 35px;
   transform:  rotate(270deg);
 }
+
+.section9{
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.div_section9{
+  display: flex;
+  flex-direction: column;  
+  width: 300px;
+  align-items: center;
+  padding: 15px;
+}
+.section9 .img_section9{
+  height: 25rem;
+}
+.section9 i {
+  color: #618264;
+  font-size: 1rem;
+}
